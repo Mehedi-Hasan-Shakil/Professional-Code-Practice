@@ -20,7 +20,7 @@ public class StudentList {
 				System.out.println(Constants.DATA_LOADED);
 				String names[] = readLineFromFile(Constants.FILE_NAME).split(Constants.COMMA);
 				Random random = new Random();
-				System.out.println(names[random.nextInt(4)].trim());
+				System.out.println(names[random.nextInt(names.length)].trim());
 				System.out.println(Constants.LOADING_DATA);
 			} else if (args[0].contains(Constants.ADD_STUDENT)) { //Add a new student
 				System.out.println(Constants.LOADING_DATA);
